@@ -1,0 +1,11 @@
+C:\Users\Пользователь\Repositories\cs-cource\lessons\1\HomeWork\ConsoleAppHW\ConsoleAppHW\bin\Debug\netcoreapp2.1\ConsoleAppHW.deps.json
+C:\Users\Пользователь\Repositories\cs-cource\lessons\1\HomeWork\ConsoleAppHW\ConsoleAppHW\bin\Debug\netcoreapp2.1\ConsoleAppHW.runtimeconfig.json
+C:\Users\Пользователь\Repositories\cs-cource\lessons\1\HomeWork\ConsoleAppHW\ConsoleAppHW\bin\Debug\netcoreapp2.1\ConsoleAppHW.runtimeconfig.dev.json
+C:\Users\Пользователь\Repositories\cs-cource\lessons\1\HomeWork\ConsoleAppHW\ConsoleAppHW\bin\Debug\netcoreapp2.1\ConsoleAppHW.dll
+C:\Users\Пользователь\Repositories\cs-cource\lessons\1\HomeWork\ConsoleAppHW\ConsoleAppHW\bin\Debug\netcoreapp2.1\ConsoleAppHW.pdb
+C:\Users\Пользователь\Repositories\cs-cource\lessons\1\HomeWork\ConsoleAppHW\ConsoleAppHW\obj\Debug\netcoreapp2.1\ConsoleAppHW.csprojAssemblyReference.cache
+C:\Users\Пользователь\Repositories\cs-cource\lessons\1\HomeWork\ConsoleAppHW\ConsoleAppHW\obj\Debug\netcoreapp2.1\ConsoleAppHW.csproj.CoreCompileInputs.cache
+C:\Users\Пользователь\Repositories\cs-cource\lessons\1\HomeWork\ConsoleAppHW\ConsoleAppHW\obj\Debug\netcoreapp2.1\ConsoleAppHW.AssemblyInfoInputs.cache
+C:\Users\Пользователь\Repositories\cs-cource\lessons\1\HomeWork\ConsoleAppHW\ConsoleAppHW\obj\Debug\netcoreapp2.1\ConsoleAppHW.AssemblyInfo.cs
+C:\Users\Пользователь\Repositories\cs-cource\lessons\1\HomeWork\ConsoleAppHW\ConsoleAppHW\obj\Debug\netcoreapp2.1\ConsoleAppHW.dll
+C:\Users\Пользователь\Repositories\cs-cource\lessons\1\HomeWork\ConsoleAppHW\ConsoleAppHW\obj\Debug\netcoreapp2.1\ConsoleAppHW.pdb
