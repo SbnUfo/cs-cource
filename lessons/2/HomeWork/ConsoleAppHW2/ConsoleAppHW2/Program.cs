@@ -6,7 +6,7 @@ namespace ConsoleAppHW2
     {
         static void Main(string[] args)
         {
-            /* Console.WriteLine("Enter two integer numbers: ");
+            /* Console.WriteLine("Enter two numbers: ");
              double a = double.Parse(Console.ReadLine());
              double b = double.Parse(Console.ReadLine());
              Console.WriteLine("Sum: " + (a + b));
