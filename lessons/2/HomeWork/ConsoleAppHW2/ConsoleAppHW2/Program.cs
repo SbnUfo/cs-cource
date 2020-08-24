@@ -6,18 +6,6 @@ namespace ConsoleAppHW2
     {
         static void Main(string[] args)
         {
-            /* Console.WriteLine("Enter two numbers: ");
-             double a = double.Parse(Console.ReadLine());
-             double b = double.Parse(Console.ReadLine());
-             Console.WriteLine("Sum: " + (a + b));
-             Console.WriteLine("Difference: " + (a - b));
-             Console.WriteLine("Product: " + (a * b));*/
-
-
-
-
-
-
             Console.WriteLine("Enter two numbers: ");
             double a = double.Parse(Console.ReadLine());
             double b = double.Parse(Console.ReadLine());
@@ -58,11 +46,11 @@ namespace ConsoleAppHW2
                 Console.WriteLine("Result: " + r);
             }
 
-           /* else if (o == '^')
+            else if (o == '^')
             {
-                r = a ^ b;
+              r =  Math.Pow ( a, b);
                 Console.WriteLine("Result: " + r);
-            }*/
+            }
 
 
         
