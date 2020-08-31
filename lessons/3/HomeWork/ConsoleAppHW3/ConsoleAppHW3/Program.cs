@@ -8,16 +8,20 @@ namespace ConsoleAppHW3
         {
             Console.WriteLine("Enter three names: ");
             string[] names = new string[3];
-                names[0] = Console.ReadLine();
-                names[1] = Console.ReadLine();
-                names[2] = Console.ReadLine();
-
+            for (int i = 0; i < 3; i++)
+            {
+                names[i] = Console.ReadLine();
+            }
+            
             
             Console.WriteLine("Enter age of these people: ");
             string[] age = new string[3];
-            age[0] = Console.ReadLine();
-            age[1] = Console.ReadLine();
-            age[2] = Console.ReadLine();
+            for (int i = 0; i < 3; i++)
+            {
+                age[i] = Console.ReadLine();
+            }
+            
+            
 
  
             for (int i = 0; i < names.Length; i++)
