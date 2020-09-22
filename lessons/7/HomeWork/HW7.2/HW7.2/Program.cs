@@ -16,8 +16,11 @@ namespace HW7._2
 
                 else
                 {
-                    for (int i = Line.Length - 1; i >= 0; i--)
-                        Console.Write(Line[i]);
+                    char[] ReverseLine = Line.ToCharArray();
+                    Array.Reverse(ReverseLine);
+                    string output = new string(ReverseLine);
+                    Console.WriteLine(ReverseLine);
+
                 }
 
 
