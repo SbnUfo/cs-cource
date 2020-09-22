@@ -6,31 +6,26 @@ namespace HW7
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter a string of several words: ");
-            string[] words;
+            Console.WriteLine("Введите строку из нескольких слов: ");
+            string[] WordsInSentence;
+            var Counter = 0;
             while (true)
             {
+                var Sentence = Console.ReadLine();
+                WordsInSentence = Sentence.Split(new char[] { ' ', '.', ',', '!', '?', ':', ';', '-' }, StringSplitOptions.RemoveEmptyEntries);
 
-                Console.Write("> ");
-                var line = Console.ReadLine();
-
-                if (string.IsNullOrWhiteSpace(line))
-                {
-                    Console.WriteLine("Вы ввели пустую строку, попробуйте ещё раз:");
-                }
-                else
-                {
-                    words = line.Split(' ', StringSplitOptions.RemoveEmptyEntries);
-                    if (words.Length < 2)
-                    {
-                        Console.WriteLine("Слишком мало слов, попробуйте ещё раз:");
-                    }
-                    else
-                    {
-                        break;
-                    }
-                }
+                if (WordsInSentence.Length < 2) Console.WriteLine("Слишком мало слов, попробуйте ещё раз:");
+                else break;
             }
+
+            foreach (var Word in WordsInSentence)
+            {
+                if (Word.ToLower()[0].Equals('а'))
+                    Counter++;
+            }
+            Console.WriteLine("Количество слов, начинающихся с буквы 'A': " + Counter);
+
         }
+
     }
 }
