@@ -54,8 +54,13 @@ namespace HW10
         public string PersonName { get; set; }
         public int PersonAge { get; set; }
 
-        public int AgeIn4Years =>
-            (byte)(PersonAge + 4);
+        public int AgeIn4Years
+        {
+            get
+            {
+                return PersonAge + 4;
+            }
+        }
 
         public string PersonInfo
         {
