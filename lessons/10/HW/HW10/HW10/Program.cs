@@ -57,8 +57,13 @@ namespace HW10
         public int AgeIn4Years =>
             (byte)(PersonAge + 4);
 
-        public string PersonInfo =>
-            $"Name: {PersonName}, age in 4 years: {AgeIn4Years}";
+        public string PersonInfo
+        {
+            get
+            {
+               return $"Name: {PersonName}, age in 4 years: {AgeIn4Years}";
+            }
+        }
 
         public Person(string personName, int personAge)
         {
