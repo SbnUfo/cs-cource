@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 namespace HW14
 {
-    class FibonacciNumberY : IEnumerable<int>
+    class FibonacciYiend : IEnumerable<int>
     {
         private readonly int _number;
 
-        public FibonacciNumberY(int number)
+        public FibonacciYiend(int number)
         {
             _number = number;
         }

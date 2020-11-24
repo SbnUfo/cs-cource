@@ -13,12 +13,12 @@ namespace HW14
 
         static void Print(IEnumerable<int> enumerable)
         {
-           
+            Console.Write("{");
             foreach (var e in enumerable)
             {
                 Console.Write($" {e} ");
             }
-           
+            Console.WriteLine("}");
         }
     }
 }
