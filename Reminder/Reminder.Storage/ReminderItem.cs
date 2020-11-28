@@ -25,7 +25,7 @@ namespace Reminder.Storage
 		/// <summary>
 		///   Entered user message
 		/// </summary>
-		public string Message { get; set; }
+		public string Message { get; private set; }
 
 		/// <summary>
 		///   User id/number/email from telegram
@@ -54,7 +54,27 @@ namespace Reminder.Storage
 			ContactId = contactId;
 		}
 
+		public void MarkSent() =>
+			MoveToState(ReminderItemStatus.Ready, ReminderItemStatus.Sent);
+
+		public void MarkFailed() =>
+			MoveToState(ReminderItemStatus.Ready, ReminderItemStatus.Failed);
+
+		public void MarkReady() =>
+			MoveToState(ReminderItemStatus.Created, ReminderItemStatus.Ready);
+
 		public override string ToString() =>
 			$"Reminder (id: {Id}, status: {Status}) at {DateTime:O} to {ContactId}";
+
+		private void MoveToState(ReminderItemStatus allowedStatus, ReminderItemStatus targetStatus)
+		{
+			if (Status != allowedStatus)
+			{
+				throw new InvalidOperationException(
+					$"Reminder should be in {allowedStatus} status");
+			}
+
+			Status = targetStatus;
+		}
 	}
 }

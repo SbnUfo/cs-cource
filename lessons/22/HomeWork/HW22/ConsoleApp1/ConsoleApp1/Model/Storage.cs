@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace CitiesWebApp.Model
+namespace CityList.Model
 {
 	public class Storage
 	{
@@ -15,7 +15,7 @@ namespace CitiesWebApp.Model
 			Cities = new List<City>
 			{
 				new City(Guid.NewGuid(), "Moscow", "The capital of Russia", 16_000_000),
-				new City(Guid.NewGuid(), "Tokyo", "The capital of Japan", 15_000_000)
+				new City(Guid.NewGuid(), "Tokio", "The capital of Japan", 15_000_000)
 			};
 		}
 	}

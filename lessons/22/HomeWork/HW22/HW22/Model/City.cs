@@ -1,12 +1,11 @@
 ﻿using System;
 
-namespace CitiesWebApp.Model
+namespace CityList.Model
 {
 	public class City
 	{
 		public City()
 		{
-
 		}
 
 		public City(Guid id, string title, string description, int population)
@@ -21,5 +20,11 @@ namespace CitiesWebApp.Model
 		public string Title { get; set; }
 		public string Description { get; set; }
 		public int Population { get; set; }
+
+		public void Update(string description, int population)
+		{
+			Description = description;
+			Population = population;
+		}
 	}
 }
