@@ -17,8 +17,8 @@ FROM [DocumentStatus] AS DocumentStatus
      ON DocumentStatus.SenderAddressId = SenderAddress.Id
     JOIN [City] AS SenderCity
      ON SenderAddress.CityId = SenderCity.Id
-    JOIN [PositiON] AS SenderPositiON
-     ON Sender.PositiONId = SenderPositiON.Id
+    JOIN [Position] AS SenderPosition
+     ON Sender.PositiONId = SenderPosition.Id
     JOIN [Employee] AS Recipient
      ON DocumentStatus.RecipientId = Recipient.Id
     JOIN [Address] AS RecipientAddress
@@ -26,14 +26,14 @@ FROM [DocumentStatus] AS DocumentStatus
     JOIN [City] AS RecipientCity
      ON RecipientAddress.CityId = RecipientCity.Id
     JOIN [Position] AS RecipientPosition
-     ON Recipient.PositiONId = RecipientPositiON.Id
+     ON Recipient.PositionId = RecipientPosition.Id
     JOIN [Status] AS S
      ON DocumentStatus.StatusId = S.Id
 
 GROUP BY Document.Name,
          Document.Pages,
          Sender.Fullname,
-         SenderPositiON.Name,
+         SenderPosition.Name,
          CONCAT(SenderCity.Name, ', ул. ', SenderAddress.Street, ', д. ',SenderAddress.House),
          Recipient.Fullname,
          RecipientPositiON.Name,
